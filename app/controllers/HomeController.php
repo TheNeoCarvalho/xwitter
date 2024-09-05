@@ -1,13 +1,13 @@
 <?php
 
+namespace App\Controllers;
+
+use Core\Controller;
+
 class HomeController extends Controller
 {
     public function index()
     {
-        $userModel = new UserModel();
-        $users = $userModel->getAllUsers();
-        
-        $this->view('home/index', ['users' => $users]);
+        $this->view('home/index');
     }
 }
-

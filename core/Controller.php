@@ -1,5 +1,7 @@
 <?php
 
+namespace Core;
+
 class Controller
 {
     protected function view($viewName, $data = [])
@@ -8,4 +10,3 @@ class Controller
         require_once '../app/views/' . $viewName . '.php';
     }
 }
-
