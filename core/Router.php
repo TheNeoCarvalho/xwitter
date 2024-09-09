@@ -10,12 +10,24 @@ class Router
 
         switch ($url) {
             case '/':
-                $controllerName = 'App\Controllers\HomeController';
+                $controllerName = 'App\controllers\HomeController';
                 $actionName = 'index';
                 break;
             case '/login':
-                $controllerName = 'App\Controllers\AuthController';
+                $controllerName = 'App\controllers\AuthController';
                 $actionName = 'login';
+                break;
+             case '/register':
+                $controllerName = 'App\controllers\AuthController';
+                $actionName = 'register';
+                break;
+            case '/dashboard':
+                $controllerName = 'App\controllers\AuthController';
+                $actionName = 'dash';
+                break;
+            case '/logout':
+                $controllerName = 'App\controllers\AuthController';
+                $actionName = 'logout';
                 break;
             default:
                 http_response_code(404);

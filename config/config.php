@@ -1,12 +1,8 @@
 <?php
 
 return [
-    'db' => [
-        'host' => 'localhost',
-        'user' => 'root',
-        'password' => '',
-        'dbname' => 'meu_banco_de_dados',
-        'charset' => 'utf8mb4',
-    ],
+    'host' => '127.0.0.1',      // Endereço do servidor MySQL (geralmente 'localhost' em desenvolvimento)
+    'database' => 'os',  // Nome do banco de dados
+    'user' => 'os',    // Usuário do MySQL
+    'password' => 'os',  // Senha do usuário MySQL
 ];
-
