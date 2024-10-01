@@ -104,10 +104,10 @@ class AuthController extends Controller
 
   public function dash()
  {
-        session_start();
-        if (!isset($_SESSION['user_id'])) {
-            $this->redirect("/login");
-        }
+        // session_start();
+        // if (!isset($_SESSION['user_id'])) {
+        //     $this->redirect("/login");
+        // }
 
         $this->view('dash/index', ['user' => $_SESSION['name']]);
     }
