@@ -9,4 +9,11 @@ class Controller
         extract($data);
         require_once '../app/views/' . $viewName . '.php';
     }
+
+    protected function redirect($url)
+    {  
+        header("Location: $url");
+        exit;
+    }
+    
 }
