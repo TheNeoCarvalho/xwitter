@@ -22,8 +22,8 @@ class Router
                 $actionName = 'register';
                 break;
             case '/dash':
-                $controllerName = 'App\controllers\AuthController';
-                $actionName = 'dash';
+                $controllerName = 'App\controllers\HomeController';
+                $actionName = 'index';
                 break;
             case '/logout':
                 $controllerName = 'App\controllers\AuthController';

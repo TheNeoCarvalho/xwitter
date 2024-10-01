@@ -6,14 +6,9 @@
     <title>Feed - Xwitter</title>
     <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 </head>
 <body class="bg-slate-900 flex items-center justify-center min-h-screen text-white">
-
-    <!-- Container Principal -->
     <div class="min-h-screen flex max-w-7xl mx-auto">
-
-        <!-- Coluna de Navegação Esquerda (Menu Lateral) -->
         <div class="w-1/4 p-4 hidden md:block">
             <nav class="space-y-4">
                 <a href="/" class="flex items-center space-x-2 text-xl text-gray-200 font-bold hover:bg-gray-600 p-2 rounded-md">
@@ -34,15 +29,10 @@
                 </a>
             </nav>
         </div>
-
-        <!-- Coluna Principal (Feed) -->
         <div class="w-full md:w-1/2 p-4 border-x">
-            <!-- Cabeçalho do Feed -->
             <div class="border-b p-4 mb-4">
                 <h2 class="text-xl font-bold">Página Inicial</h2>
             </div>
-
-            <!-- Campo de Criação de Novo Tweet -->
             <div class="flex space-x-4 p-4 border-b">
                 <img src="/images/avatar.png" class="w-12 h-12 rounded-full" alt="User Avatar">
                 <div class="flex-1">
@@ -54,8 +44,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Exemplo de Post no Feed -->
             <div class="p-4 border-b">
                 <div class="flex items-start space-x-4">
                     <img src="/images/avatar.png" class="w-12 h-12 rounded-full" alt="User Avatar">
@@ -83,12 +71,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Repetir a estrutura acima para mais posts -->
-
         </div>
-
-        <!-- Coluna Direita (Sugestões, Trends, etc.) -->
         <div class="w-1/4 p-4 hidden lg:block">
             <div class="bg-slate-900 p-4 rounded-lg shadow-md">
                 <h3 class="text-lg font-bold">Quem seguir</h3>
@@ -104,8 +87,6 @@
                 </div>
             </div>
         </div>
-
     </div>
-
 </body>
 </html>
